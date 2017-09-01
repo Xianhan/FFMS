@@ -1,0 +1,51 @@
+#box{
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/bg_body2.jpg);
+	background-size:100% 700px;
+	background-repeat: norepeat;
+}
+#pos{
+	width: 80%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.35);
+	position: relative;
+	left:10%;
+	overflow-y: scroll;
+	
+}
+.tab{
+	position: relative;
+	left: 10%;
+	top: 50px;
+	width: 80%;
+	BORDER: #bad6ec 2px;
+	COLOR:black;
+	font-family: "微软雅黑";
+	BORDER-COLLAPSE: collapse;
+	
+}
+.first{
+	background-image: url(../img/bg_th.gif);
+	BORDER: #74D2D9 2px solid;
+	LINE-HEIGHT: 27px;
+	font-size:20px ;
+	text-align: center;
+}
+
+.td{
+	BORDER: #74D2D9 2px solid;
+	LINE-HEIGHT: 32px;
+	TEXT-ALIGN: center;
+	font-size: 16px;
+}
+.td:hover{
+	background-color:white;
+}
+#co{
+	width:80%;
+	height:80%;
+	position:relative;
+	left:140px;
+	top:50px;
+}

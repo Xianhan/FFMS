@@ -1,0 +1,73 @@
+/*整个主体div大小及背景*/
+#box{
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/bg_body2.jpg);
+	background-size:100% 700px;
+	background-repeat: norepeat;
+}
+/*存放table的div的位置及样式*/
+#pos{
+	
+	width: 80%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.35);
+	position: relative;
+	left:10%;
+	overflow-y: scroll;
+	
+}
+/*table的样式大小及位置*/
+.tab{
+	position: relative;
+	left: 10%;
+	top: 50px;
+	width: 80%;
+	BORDER: #bad6ec 2px;
+	COLOR:black;
+	font-family: "微软雅黑";
+	BORDER-COLLAPSE: collapse;
+	
+	  margin-bottom: 10px;
+	
+}
+/*第一行的td*/
+.first{
+	background-image: url(../img/bg_th.gif);
+	BORDER: #74D2D9 2px solid;
+	TEXT-ALIGN: center;
+	font-size:20px ;
+}
+/*除了第一行以外的所有td*/
+.td{
+	BORDER: #74D2D9 2px solid;
+	LINE-HEIGHT: 23px;
+	TEXT-ALIGN: center;
+	font-size: 16px;
+}
+/*input_text的样式*/
+.inp{
+	border:none;
+	line-height:24px;
+	font-size:16px;
+	width:100%;
+
+	text-align:center;
+}
+/*控制提交按钮位置的div*/
+#subbox{
+	display:flex;
+	justify-content:center;
+	position:relative ;
+	width: 20%;
+	margin: 5px auto;
+	padding: auto;
+	
+}
+/*提交按钮的样式*/
+#sub{
+	width: 80px;
+	height: 40px;
+	font-size: 16px;
+	align-content: center;
+}

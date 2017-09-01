@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>FFMS</display-name>
+  <filter>
+  <filter-name>EncodeFilter</filter-name>
+  <filter-class>com.neuq.services.EncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodeFilter</filter-name>
+  	 <url-pattern>/*</url-pattern>
+  </filter-mapping> 
+	 <servlet>
+		<servlet-name>QuerySecurity</servlet-name>
+		<servlet-class>com.neuq.services.QuerySecurity</servlet-class>
+	</servlet>
+	 <servlet>
+		<servlet-name>WriteOutExcelAction</servlet-name>
+		<servlet-class>com.neuq.services.WriteOutExcelAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddUserAction</servlet-name>
+		<servlet-class>com.neuq.services.AddUserAction</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>CheckLogin</servlet-name>
+    <servlet-class>com.neuq.services.CheckLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePersonalInfo</servlet-name>
+    <servlet-class>com.neuq.services.UpdatePersonalInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePwdAction</servlet-name>
+    <servlet-class>com.neuq.services.UpdatePwdAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryAllIOTypeAction</servlet-name>
+    <servlet-class>com.neuq.services.QueryAllIOTypeAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateAccountAction</servlet-name>
+    <servlet-class>com.neuq.services.UpdateAccountAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OwnStockAction</servlet-name>
+    <servlet-class>com.neuq.services.OwnStockAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateMyStockAction</servlet-name>
+    <servlet-class>com.neuq.services.UpdateMyStockAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WriteExcelAction</servlet-name>
+    <servlet-class>com.neuq.services.WriteExcelAction</servlet-class>
+  </servlet>
+
+
+  <servlet>
+  <servlet-name>UpdateIncome</servlet-name>
+    <servlet-class>com.neuq.services.UpdateIncome</servlet-class>
+  </servlet>
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>AddUserAction</servlet-name>
+		<url-pattern>/AddUserAction</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckLogin</servlet-name>
+    <url-pattern>/CheckLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePersonalInfo</servlet-name>
+    <url-pattern>/UpdatePersonalInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePwdAction</servlet-name>
+    <url-pattern>/UpdatePwdAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryAllIOTypeAction</servlet-name>
+    <url-pattern>/QueryAllIOTypeAction</url-pattern>
+
+  </servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>QuerySecurity</servlet-name>
+		<url-pattern>/QuerySecurity</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAccountAction</servlet-name>
+    <url-pattern>/UpdateAccountAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OwnStockAction</servlet-name>
+    <url-pattern>/OwnStockAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateMyStockAction</servlet-name>
+    <url-pattern>/UpdateMyStockAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteExcelAction</servlet-name>
+    <url-pattern>/WriteExcelAction</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>WriteOutExcelAction</servlet-name>
+    <url-pattern>/WriteOutExcelAction</url-pattern>
+  </servlet-mapping>
+  
+	<servlet>
+		<servlet-name>EditIncome</servlet-name>
+		<servlet-class>com.neuq.services.EditIncome</servlet-class>
+	</servlet>
+
+
+  <servlet>
+    <servlet-name>DeleteIncome</servlet-name>
+    <servlet-class>com.neuq.services.DeleteIncome</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryIncome</servlet-name>
+    <servlet-class>com.neuq.services.QueryIncome</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>QueryAllIncome</servlet-name>
+    <servlet-class>com.neuq.services.QueryAllIncome</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WriteUserOutExcelAction</servlet-name>
+    <servlet-class>com.neuq.services.WriteUserOutExcelAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WriteUserInExcelAction</servlet-name>
+    <servlet-class>com.neuq.services.WriteUserInExcelAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BackUpDatabase</servlet-name>
+    <servlet-class>com.neuq.services.BackUpDatabase</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllDatabaseFileAction</servlet-name>
+    <servlet-class>com.neuq.services.AllDatabaseFileAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RecoverDatabaseAction</servlet-name>
+    <servlet-class>com.neuq.services.RecoverDatabaseAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WriteFamilyIncomeAction</servlet-name>
+    <servlet-class>com.neuq.services.WriteFamilyIncomeAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WriteFamilyOutAction</servlet-name>
+    <servlet-class>com.neuq.services.WriteFamilyOutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSecurityAction</servlet-name>
+    <servlet-class>com.neuq.services.DeleteSecurityAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QyeryDaysAction</servlet-name>
+    <servlet-class>com.neuq.services.QyeryDaysAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GateCardAction</servlet-name>
+    <servlet-class>com.neuq.services.GateCardAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryAllDay</servlet-name>
+    <servlet-class>com.neuq.services.QueryAllDay</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>EditIncome</servlet-name>
+		<url-pattern>/EditIncome</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryAllIncome</servlet-name>
+    <url-pattern>/QueryAllIncome</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DeleteIncome</servlet-name>
+    <url-pattern>/DeleteIncome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryIncome</servlet-name>
+    <url-pattern>/QueryIncome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteUserOutExcelAction</servlet-name>
+    <url-pattern>/WriteUserOutExcelAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteUserInExcelAction</servlet-name>
+    <url-pattern>/WriteUserInExcelAction</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+    <servlet-name>UpdateIncome</servlet-name>
+    <url-pattern>/UpdateIncome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackUpDatabase</servlet-name>
+    <url-pattern>/BackUpDatabase</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllDatabaseFileAction</servlet-name>
+    <url-pattern>/AllDatabaseFileAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverDatabaseAction</servlet-name>
+    <url-pattern>/RecoverDatabaseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteFamilyIncomeAction</servlet-name>
+    <url-pattern>/WriteFamilyIncomeAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteFamilyOutAction</servlet-name>
+    <url-pattern>/WriteFamilyOutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSecurityAction</servlet-name>
+    <url-pattern>/DeleteSecurityAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QyeryDaysAction</servlet-name>
+    <url-pattern>/QyeryDaysAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GateCardAction</servlet-name>
+    <url-pattern>/GateCardAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryAllDay</servlet-name>
+    <url-pattern>/QueryAllDay</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

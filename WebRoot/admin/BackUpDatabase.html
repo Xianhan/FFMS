@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>数据备份</title>
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		var backup = document.getElementById('backup');
+		var b=false;
+		backup.onclick = function() {
+			$.ajax({
+				url : '../BackUpDatabase?action=backup',
+				type : 'POST', //GET
+				async : false, //或false,是否异步
+				timeout : 5000, //超时时间
+				dataType : 'text', //返回的数据格式：json/xml/html/script/jsonp/text
+				success : function(data) {
+					b=true;
+				},
+			})
+			if(b){
+			
+			alert('备份成功');}
+			else{
+			alert('备份失败');
+			}
+		}
+		
+	}
+</script>
+</head>
+
+<body>
+	<button id="backup">数据备份</button>
+</body>
+</html>

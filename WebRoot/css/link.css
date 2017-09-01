@@ -1,0 +1,39 @@
+/*整个主体div大小及背景*/
+#box{
+	width: 1130px;
+	height: 630px;
+	background-image: url(../img/bg_body2.jpg);
+}
+/*存放table的div的位置及样式*/
+#pos{
+	width: 80%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.35);
+	position: relative;
+	left:10%;
+	overflow-y: scroll;
+	
+}
+#b1{
+	width: 100px;
+	height: 80px;
+	position: relative;
+	margin: 30px;
+	background-color:blue ;
+}
+#b2{
+	width: 100px;
+	height: 80px;
+	position: relative;
+	margin: 30px;
+}
+#b3{
+	width: 100px;
+	height: 80px;
+	position: relative;
+	margin: 30px;
+}
+#b4{
+	position: relative;
+	margin: 30px;
+}

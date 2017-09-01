@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource name="jdbc/FFMS"
+auth="Container"
+type="javax.sql.DataSource"
+username="root"
+password="123456"
+url="jdbc:mysql://localhost:3306/db_neuq"
+driverClassName="com.mysql.jdbc.Driver"
+maxIdle="2"
+maxWait="5000"
+maxActive="4"
+/>
+</Context>

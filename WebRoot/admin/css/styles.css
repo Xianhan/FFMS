@@ -1,0 +1,76 @@
+body{
+	margin:0;
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	color:#fff;
+	padding-top:30px;
+	background-color:white;
+	height:800px;
+}
+
+ul{
+	margin:0;
+	padding:0 0 20px 30px;
+}
+
+.container{
+	max-width: 1200px;
+	overflow:hidden;
+	padding: 20px;
+	
+}
+.container{
+	margin:auto;
+}
+.mySlideshow .animated{
+	position:absolute;
+}
+.first{
+	background:url("../images/lb0.jpg") center no-repeat;
+}
+.first a,
+.first img{
+	display:block;
+}
+.first a{
+	top:80px;
+	left:39%;
+	margin-left:-165px;
+}
+.first div{
+	font-family:'Open Sans Condensed', sans-serif;
+	font-size:50px;
+	bottom:80px;
+	left:39%;
+	width:320px;
+	text-align:center;
+	margin-left:-160px;
+}
+.second{
+	background:url("../images/lb1.jpg") center no-repeat;
+}
+.second img{
+	top: 160px;
+	right: 19%;
+}
+.third{
+	background:url("../images/lb2.jpg") center no-repeat;
+}
+.third img{
+	top:100px;
+	left: 23%;
+}
+.fourth{
+	background:url("../images/lb3.jpg") center no-repeat;
+}
+.fourth img{
+	top:320px;
+	right:8%;
+}
+.fifth{
+	background:url("../images/lb4.jpg") center no-repeat;
+}
+.fifth img{
+	top:120px;
+	left:21%;
+}

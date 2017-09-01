@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>清除所有数据</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		var del= document.getElementById('delete');
+		var b=false;
+		del.onclick = function() {
+		
+			$.ajax({
+				url : '../TablesAction',
+				type : 'POST', //GET
+				async : false, //或false,是否异步
+				timeout : 5000, //超时时间
+				dataType : 'text', //返回的数据格式：json/xml/html/script/jsonp/text
+				success : function(data) {
+			
+					if(data=='ok')
+					b=true;
+				},
+			})
+			if(b){
+			
+			alert('删除成功');}
+			else{
+			alert('删除失败');
+			}
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<button id="delete">清除所有数据</button>
+</body>
+</html>

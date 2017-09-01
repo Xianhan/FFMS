@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>注册新用户</title>
+<link rel="stylesheet" href="../css/Form.css" />
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/userexist.js"></script>
+
+		<script type="text/javascript">
+	
+			function check(){
+				var newpwd=document.getElementById('password');
+				var repwd=document.getElementById('password2');
+				
+				if(newpwd.value!=repwd.value){
+				alert('两次输入的新密码不一致，请重新输入');
+				return false;
+				}
+				return true;
+			}
+		</script>
+</head>
+
+<body>
+	<h4>用户注册</h4>
+	<div id="box">
+		<div id="pos">
+			<form action="../AddUserAction?add=true" method="post"
+				onsubmit="return check()">
+				<table class="tab">
+
+					<tr>
+						<td class="first">用户名</td>
+						<td class="td"><input type="text" class="inp" name="uname"
+							id="uname"></td>
+					</tr>
+					<tr>
+						<td class="first">密码</td>
+						<td class="td"><input type="password" class="inp"
+							name="password" id="password" value=""></td>
+					</tr>
+					<tr>
+						<td class="first">确认密码</td>
+						<td class="td"><input type="password" class="inp"
+							name="password2" id="password2" value=""></td>
+					</tr>
+					<tr>
+						<td class="first">姓名</td>
+						<td class="td"><input type="text" class="inp" name="realname"></td>
+					</tr>
+					<tr>
+						<td class="first">性别</td>
+						<td class="td"><input type="radio" name="sex" value="男"
+							checked="checked"> 男 <input type="radio" name="sex"
+							value="女"> 女</td>
+					</tr>
+					<tr>
+						<td class="first">手机号</td>
+						<td class="td"><input type="text" class="inp" name="phone"></td>
+					</tr>
+
+				</table>
+				<br> <br> <br>
+				<div id="subbox">
+					<input type="submit" id="submit" name="submit" class="inp"
+						value="注册">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
